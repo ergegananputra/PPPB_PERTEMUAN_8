@@ -7,9 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.widget.AppCompatCheckBox
-import androidx.fragment.app.FragmentManager
-import androidx.viewpager2.widget.ViewPager2
-import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
 import com.latihanbyrg.tugaspertemuan8.MainActivity.Companion.email
 import com.latihanbyrg.tugaspertemuan8.MainActivity.Companion.password
@@ -19,8 +16,6 @@ import com.latihanbyrg.tugaspertemuan8.MainActivity.Companion.viewPagerCompanion
 
 
 class RegisterFragment : Fragment() {
-
-    private lateinit var viewPager2: ViewPager2
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

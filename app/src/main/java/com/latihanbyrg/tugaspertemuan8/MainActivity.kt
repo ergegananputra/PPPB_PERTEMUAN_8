@@ -2,7 +2,6 @@ package com.latihanbyrg.tugaspertemuan8
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayoutMediator
 import com.latihanbyrg.tugaspertemuan8.databinding.ActivityMainBinding

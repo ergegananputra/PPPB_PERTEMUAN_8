@@ -8,33 +8,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
-import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
 import com.latihanbyrg.tugaspertemuan8.MainActivity.Companion.password
 import com.latihanbyrg.tugaspertemuan8.MainActivity.Companion.username
 import com.latihanbyrg.tugaspertemuan8.MainActivity.Companion.viewPagerCompanion
-import com.latihanbyrg.tugaspertemuan8.databinding.FragmentLoginBinding
-
-
-private const val USERNAME = "EXTRA_USERNAME"
-private const val PASSWORD = "EXTRA_PASSWORD"
 
 
 class LoginFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(USERNAME)
-            param2 = it.getString(PASSWORD)
-        }
-
-
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -77,15 +57,4 @@ class LoginFragment : Fragment() {
         return view
     }
 
-    companion object {
-
-        @JvmStatic
-        fun newInstance(username: String, password: String) =
-            LoginFragment().apply {
-                arguments = Bundle().apply {
-                    putString(USERNAME, username)
-                    putString(PASSWORD, password)
-                }
-            }
-    }
 }
